@@ -71,7 +71,7 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
-            V8 version is {global._v8runtime().version}
+            V8 version is {global._v8runtime ? global._v8runtime().version : 'disabled'}
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />

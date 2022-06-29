@@ -257,11 +257,6 @@ android {
 
         }
     }
-
-    packagingOptions {
-        // Make sure libjsc.so does not packed in APK
-        exclude "**/libjsc.so"
-    }
 }
 
 dependencies {
